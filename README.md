@@ -19,8 +19,9 @@ docker build --progress=plain , it will show you progress
   - Run some commands to install additional Programs 
   - Specify a command to run a container setup
 
-  ```FROM alpine
+  ```
+  FROM alpine
 
   RUN npm install
 
-  CMD ["npm","start"]```
+  CMD ["npm","start"] ```
