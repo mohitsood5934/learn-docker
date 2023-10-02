@@ -1,0 +1,14 @@
+version: '3'
+services:
+  redis-server:
+    image: 'redis'
+    networks:
+      - mynetwork
+  node-app:
+    build: .
+    ports: 
+      - "4001:8081"
+    networks:
+      - mynetwork
+networks:
+  mynetwork:

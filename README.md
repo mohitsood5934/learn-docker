@@ -74,3 +74,6 @@ docker exec -it <containerid> sh
 # Minimizing cache busting & rebuilds
 Order of commands matters when you are writing a docker file .
 How you are writing this commands & in which order helps in minimi
+
+
+# User of Docker Compose 
