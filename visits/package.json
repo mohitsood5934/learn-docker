@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "*",
-    "redis": "2.8.0"
+    "express": "*"
   }
 }
