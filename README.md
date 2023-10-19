@@ -77,3 +77,27 @@ How you are writing this commands & in which order helps in minimi
 
 
 # User of Docker Compose 
+
+
+# Multi Step Docker Builds
+
+# Build Phase
+- use node:alpine
+- copy the package.json file
+- install dependencies
+- RUN npm run build
+
+ - result of this build process will be main.js file & index.html file
+
+# Run Phase
+- use nginx
+- copy over the result of 'npm run build'
+- start nginx
+
+Here make a note that when we are copying over the result of 'npm run build' we are only taking the build folder i.e index.html and main.js file and all other dependencies and folders are left there as they are not needed .This will help us to decrease the bundle size
+
+- running file : docker build .
+docker run -p 8080:80 <imageid>
+
+80 is default port for nginx
+
